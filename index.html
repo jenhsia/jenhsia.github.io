@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <script type="text/javascript" src="https://livejs.com/live.js"></script> -->
+  <script type="text/javascript" src="js/js_func.js"></script>
+  <title>Jennifer Hsia</title>
+
+  <meta name="author" content="Jennifer Hsia">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jennifer Hsia's personal website, mingling encouraged!">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<tr style="padding:0px">
+  <td style="padding:0px">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:2.5%;width:63%;vertical-align:middle">
+        <p style="text-align:center">
+          <name>Jennifer Hsia</name>
+        </p>
+        <p>Hello! I am a Ph.D. student in the <a href="https://www.ml.cmu.edu/">Machine Learning</a> <a href="https://www.cmu.edu/ni/academics/pnc/pnc-machine-learning.html"> department </a> at Carnegie Mellon University. I am advised by Prof. <a href="https://www.zacharylipton.com/">Zachary Lipton</a> and Prof. <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>.
+        </p>
+        <p>
+          My research studies how language models fail to use retrieved information appropriately in question answering. My work examines how noise sensitivity and frequency bias cause models to select incorrect answers even when relevant evidence is present, and asks how models should handle questions that are themselves underspecified or false.
+        </p>
+        <p>
+          I graduated with a B.S.E. in Computer Science from <a href="https://www.princeton.edu/">Princeton University</a>. My research was advised by Prof. <a href="http://faculty.ee.princeton.edu/ramadge/doku.html">Peter Ramadge</a>. 
+        </p>
+        <p style="text-align:center">
+          <a href="mailto:jennifer.hsia2@gmail.com">Email</a> &nbsp/&nbsp
+          <!-- <a href="https://scholar.google.com/citations?hl=en&user=LBEIm8gAAAAJ">Google Scholar</a> &nbsp/&nbsp -->
+          <a href="https://github.com/jenniferhsia">Github</a> &nbsp/&nbsp
+          <!-- <a href="files/Jacob Yeung CV.pdf">CV</a> &nbsp/&nbsp -->
+          <a href="https://www.linkedin.com/in/jennifer-h-b90144131/">LinkedIn</a>
+        </p>
+      </td>
+      <td style="padding:2.5%;width:30%;max-width:30%">
+        <a href="images/avatar.jpg"><img style="width:95%;max-width:95%;border-radius:50%;" alt="profile photo" src="images/avatar Small.jpg" class="hoverZoomLink"></a>
+      </td>
+    </tr>
+    </tbody></table>
+
+    <!-- Research -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+      <td style="padding:20px;width:100%;vertical-align:middle">
+        <heading>Research</heading>
+
+      </td>
+    </tr>
+    </tbody></table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr>
+      <td style="padding:20px;width:60%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2406.02659" id="brainnerd">
+            <papertitle>RAGGED: Towards Informed Design of Scalable and Stable RAG Systems</papertitle>
+        </a>
+        <br>
+        <strong>Jennifer Hsia</strong>,
+        Afreen Shaikh,
+        <a href="https://zorazrw.github.io/">Zhiruo Wang</a>,
+        <a href="https://www.phontron.com/">Graham Neubig</a>
+        <br>
+        <em>ICML 2025</em>
+        <br>
+        <a href="https://arxiv.org/abs/2403.09040">Paper</a> / <a href="https://github.com/neulab/ragged">Code</a> / <a href="data/RAGGED_bib.html">bibtex</a>
+        <p align="justify"> Reader robustness to noisy retrieval, not retriever quality, is the key bottleneck for RAG stability and scalability. This pattern persists across retrievers, rerankers, and prompts.
+        </p>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:60%;vertical-align:middle">
+        <papertitle>Deciding Among Plausible Answers: Joint Constraint Aggregation for Retrieval-Augmented QA</papertitle>
+        <br>
+        <strong>Jennifer Hsia</strong>,
+        <a href="https://www.zacharylipton.com/">Zachary Lipton</a>,
+        <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>
+        <br>
+        <em>Under review</em>
+        <br>
+        <p align="justify"> When retrieved passages surface multiple plausible candidates, models tend to select the most frequently mentioned one even when it violates a qualifier in the question. We decompose the question into atomic constraints, evaluate each candidate against each constraint using retrieved evidence, and jointly aggregate across candidates to select the answer that best satisfies what the question requires.
+        </p>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:60%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2308.14272" id="goodharts">
+          <papertitle>Goodhart’s Law Applies to NLP Explanation Benchmarks</papertitle>
+        </a>
+        <br>
+        <strong>Jennifer Hsia</strong>,
+        <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>,
+        <a href="https://danishpruthi.com/">Danish Pruthi</a>,
+        <a href="https://www.zacharylipton.com/">Zachary Lipton</a>
+        <br>
+        <em>EACL 2024</em>
+        <br>
+        <a href="https://arxiv.org/abs/2308.14272">Paper</a> / <a href="https://github.com/jenhsia/goodhart_nlp_explainability?tab=readme-ov-file">Code</a> / <a href="data/Goodharts_bib.html">bibtex</a>
+        <p align="justify"> Simple wrapper methods can inflate faithfulness scores dramatically without improving the underlying explanations, showing that current metrics are not suited to guide explainability research.</p>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:40%;vertical-align:middle">
+        <a href="https://par.nsf.gov/servlets/purl/10299393" id="matrixfactorization">
+          <papertitle>An Experimental Study of Matrix Factorization
+          </papertitle>
+        </a>
+        <br>
+        <strong>Jennifer Hsia</strong>,
+        <a href="http://faculty.ee.princeton.edu/ramadge/doku.html">Peter Ramadge</a>
+        <br>
+        <em>Conference on Information Sciences and Systems (CISS)</em>, 2021
+        <br>
+        <a href="https://par.nsf.gov/servlets/purl/10299393">Paper</a> / <a href="data/MatrixFactorization_bib.html">bibtex</a>
+        <p align="justify"> Analyzes how balanced factorization enables faster convergence for gradient descent in matrix factorization of fMRI scans.
+        </p>
+        <p></p>
+      </td>
+    </tr>
+
+
+    <!-- Teaching -->
+    <table class="center">
+      <tr>
+        <td>
+          <heading>Teaching</heading>
+        </td>
+      </tr>
+      <tr>
+        <td width="75%" valign="center">
+          <p>
+          <p style="font-size:18px">I have been a teaching assistant for the following courses:</p>
+          <ul>
+            <li><a href="https://andrejristeski.github.io/10708-S23/">
+              <papertitle>Probabilistic Graphical Models (10708) - Spring 2023</papertitle>
+            </a>
+            </li>
+          </ul>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+      <td style="padding:0px">
+        <br>
+        <p style="text-align:right;font-size:small;">
+          <a href="https://jonbarron.info/">Cloned from here!</a>
+          <!-- <br> Last updated: February 26, 2025 -->
+        </p>
+      </td>
+    </tr>
+    </tbody></table>
+  </td>
+</tr>
+</table>
+
+<!-- <script xml:space="preserve" language="JavaScript">
+hideblock('edca');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('animal reid');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('hangul fonts');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('convolution pruning');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('deepchrome 2.0');
+</script> -->
+
+</body>
+
+</html>
