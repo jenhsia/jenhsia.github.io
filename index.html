@@ -21,7 +21,7 @@
         <p style="text-align:center">
           <name>Jennifer Hsia</name>
         </p>
-        <p>Hello! I am a Ph.D. student in the <a href="https://www.ml.cmu.edu/">Machine Learning</a> <a href="https://www.cmu.edu/ni/academics/pnc/pnc-machine-learning.html"> department </a> at Carnegie Mellon University. I am advised by Prof. <a href="https://www.zacharylipton.com/">Zachary Lipton</a> and Prof. <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>.
+        <p>Hello! I am a Ph.D. student in the <a href="https://www.ml.cmu.edu/">Machine Learning</a> <a href="https://www.cmu.edu/ni/academics/pnc/pnc-machine-learning.html"> department </a> at Carnegie Mellon University. I am advised by Prof. <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a> and Prof. <a href="https://www.zacharylipton.com/">Zachary Lipton</a>.
         </p>
         <p>
           My research studies how language models fail to use retrieved information appropriately in question answering. My work examines how noise sensitivity and frequency bias cause models to select incorrect answers even when relevant evidence is present, and asks how models should handle questions that are themselves underspecified or false.
@@ -56,6 +56,22 @@
 
     <tr>
       <td style="padding:20px;width:60%;vertical-align:middle">
+        <papertitle>Deciding Among Plausible Answers: Joint Constraint Aggregation for Retrieval-Augmented QA</papertitle>
+        <br>
+        <strong>Jennifer Hsia</strong>,
+        <a href="https://www.zacharylipton.com/">Zachary Lipton</a>,
+        <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>
+        <br>
+        <em>Under review</em>
+        <br>
+        <p align="justify"> When retrieved passages surface multiple plausible candidates, models tend to select the most frequently mentioned one even when it violates a qualifier in the question. We decompose the question into atomic constraints, evaluate each candidate against each constraint using retrieved evidence, and jointly aggregate across candidates to select the answer that best satisfies what the question requires.
+        </p>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:60%;vertical-align:middle">
         <a href="https://arxiv.org/abs/2406.02659" id="brainnerd">
             <papertitle>RAGGED: Towards Informed Design of Scalable and Stable RAG Systems</papertitle>
         </a>
@@ -69,22 +85,6 @@
         <br>
         <a href="https://arxiv.org/abs/2403.09040">Paper</a> / <a href="https://github.com/neulab/ragged">Code</a> / <a href="data/RAGGED_bib.html">bibtex</a>
         <p align="justify"> Reader robustness to noisy retrieval, not retriever quality, is the key bottleneck for RAG stability and scalability. This pattern persists across retrievers, rerankers, and prompts.
-        </p>
-        <p></p>
-      </td>
-    </tr>
-
-    <tr>
-      <td style="padding:20px;width:60%;vertical-align:middle">
-        <papertitle>Deciding Among Plausible Answers: Joint Constraint Aggregation for Retrieval-Augmented QA</papertitle>
-        <br>
-        <strong>Jennifer Hsia</strong>,
-        <a href="https://www.zacharylipton.com/">Zachary Lipton</a>,
-        <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>
-        <br>
-        <em>Under review</em>
-        <br>
-        <p align="justify"> When retrieved passages surface multiple plausible candidates, models tend to select the most frequently mentioned one even when it violates a qualifier in the question. We decompose the question into atomic constraints, evaluate each candidate against each constraint using retrieved evidence, and jointly aggregate across candidates to select the answer that best satisfies what the question requires.
         </p>
         <p></p>
       </td>
