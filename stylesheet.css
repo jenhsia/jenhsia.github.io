@@ -2,20 +2,20 @@ body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-  color: #222222;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 17px;
-  line-height: 1.55;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 main {
-  max-width: 760px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 40px 20px 60px;
 }
 
 a {
-  color: #1a4b8c;
+  color: #1772d0;
   text-decoration: none;
 }
 
@@ -25,28 +25,28 @@ a:focus {
 }
 
 h1 {
-  margin: 0 0 16px;
-  font-size: 32px;
+  margin: 0 0 14px;
+  font-size: 28px;
   font-weight: normal;
 }
 
 h2 {
   margin: 0 0 14px;
   padding-bottom: 6px;
-  border-bottom: 1px solid #cccccc;
-  font-size: 22px;
+  border-bottom: 1px solid #dddddd;
+  font-size: 20px;
   font-weight: normal;
 }
 
 p {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
 }
 
 .about {
   display: flex;
   align-items: flex-start;
-  gap: 32px;
-  margin-bottom: 40px;
+  gap: 28px;
+  margin-bottom: 36px;
 }
 
 .about-text {
@@ -55,32 +55,28 @@ p {
 }
 
 .portrait {
-  flex: 0 0 180px;
-  width: 180px;
-  height: 180px;
+  flex: 0 0 150px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .pub {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .pub p {
-  margin: 0 0 3px;
+  margin: 0 0 2px;
 }
 
 .pub-title {
   font-weight: bold;
-}
-
-.pub-authors {
-  color: #444444;
 }
 
 .pub-venue {
@@ -89,9 +85,9 @@ section {
 }
 
 .pub-summary {
-  margin-top: 6px !important;
-  color: #444444;
-  font-size: 15.5px;
+  margin-top: 5px !important;
+  color: #555555;
+  font-size: 15px;
 }
 
 ul {
@@ -104,28 +100,24 @@ li {
 }
 
 footer {
-  color: #777777;
-  font-size: 14px;
+  color: #888888;
+  font-size: 13px;
 }
 
 @media (max-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-
   .about {
     flex-direction: column-reverse;
     align-items: flex-start;
-    gap: 20px;
+    gap: 18px;
   }
 
   .portrait {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     flex-basis: auto;
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
