@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jennifer Hsia | Machine Learning Researcher</title>
+  <title>Jennifer Hsia</title>
   <meta name="author" content="Jennifer Hsia">
   <meta
     name="description"
@@ -12,7 +12,7 @@
   <link rel="canonical" href="https://jenhsia.github.io/">
   <link rel="icon" type="image/jpeg" href="images/avatar.jpg">
 
-  <meta property="og:title" content="Jennifer Hsia | Machine Learning Researcher">
+  <meta property="og:title" content="Jennifer Hsia">
   <meta
     property="og:description"
     content="Machine Learning PhD candidate at Carnegie Mellon University researching language model behavior, evaluation, and grounded systems."
@@ -26,202 +26,158 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="nav-name" href="#">Jennifer Hsia</a>
-      <div class="nav-links">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main-content">
-    <section class="hero" aria-labelledby="page-title">
-      <div class="hero-copy">
-        <p class="eyebrow">Final-year PhD candidate in Machine Learning</p>
-        <h1 id="page-title">Jennifer Hsia</h1>
-        <p class="affiliation">
-          Carnegie Mellon University
-        </p>
-        <p class="intro">
+  <main>
+    <header class="about">
+      <div class="about-text">
+        <h1>Jennifer Hsia</h1>
+        <p>
+          I am a final-year PhD candidate in Machine Learning at
+          <a href="https://www.ml.cmu.edu/">Carnegie Mellon University</a>, advised by
+          <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a> and
+          <a href="https://www.zacharylipton.com/">Zachary Lipton</a>.
           I study language model behavior and evaluation, with a focus on grounded systems.
           My research asks why models fail even when the information they need is available,
           develops targeted evaluations to identify those failures, and explores interventions
           that help models use evidence more reliably.
         </p>
         <p>
-          I am advised by Prof. <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>
-          and Prof. <a href="https://www.zacharylipton.com/">Zachary Lipton</a>.
-          I received a B.S.E. in Computer Science from
-          <a href="https://www.princeton.edu/">Princeton University</a>, where my undergraduate
-          research was advised by Prof.
+          Before CMU, I received a B.S.E. in Computer Science from
+          <a href="https://www.princeton.edu/">Princeton University</a>, where I was advised by
           <a href="http://faculty.ee.princeton.edu/ramadge/doku.html">Peter Ramadge</a>.
         </p>
-        <p class="availability">
+        <p>
           I am currently seeking research scientist roles focused on model behavior,
           evaluation, and reliable grounded systems.
         </p>
-        <div class="profile-links" aria-label="Profile links">
-          <a href="mailto:jennifer.hsia2@gmail.com">Email</a>
-          <a href="https://github.com/jenhsia">GitHub</a>
+        <p class="links">
+          <a href="mailto:jennifer.hsia2@gmail.com">Email</a> &nbsp;/&nbsp;
+          <a href="https://github.com/jenhsia">GitHub</a> &nbsp;/&nbsp;
           <a href="https://www.linkedin.com/in/jennifer-h-b90144131/">LinkedIn</a>
-        </div>
-      </div>
-
-      <div class="portrait">
-        <img src="images/avatar.jpg" alt="Jennifer Hsia">
-      </div>
-    </section>
-
-    <section id="research" class="section" aria-labelledby="research-title">
-      <div class="section-heading">
-        <p class="section-label">Current</p>
-        <h2 id="research-title">Research</h2>
-      </div>
-      <article class="current-work">
-        <h3>Reliable evidence use in grounded assistants</h3>
-        <p>
-          My current work studies a failure mode in which assistants give advice supported
-          by retrieved evidence without first checking whether that evidence applies to the
-          user's situation. I am developing evaluations and interventions that test whether
-          models establish applicability before responding.
         </p>
-      </article>
+      </div>
+      <img class="portrait" src="images/avatar.jpg" alt="Jennifer Hsia">
+    </header>
+
+    <section id="research">
+      <h2>Current Research</h2>
+      <p>
+        My current work studies a failure mode in which assistants give advice supported
+        by retrieved evidence without first checking whether that evidence applies to the
+        user's situation. I am developing evaluations and interventions that test whether
+        models establish applicability before responding.
+      </p>
     </section>
 
-    <section id="publications" class="section" aria-labelledby="publications-title">
-      <div class="section-heading">
-        <p class="section-label">Selected</p>
-        <h2 id="publications-title">Publications</h2>
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <div class="pub">
+        <p class="pub-title">
+          Deciding Among Plausible Answers: Joint Constraint Aggregation for Retrieval-Augmented QA
+        </p>
+        <p class="pub-authors">
+          <strong>Jennifer Hsia</strong>,
+          <a href="https://www.zacharylipton.com/">Zachary Lipton</a>,
+          <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>
+        </p>
+        <p class="pub-venue">EMNLP 2026</p>
+        <p class="pub-summary">
+          When retrieval surfaces several plausible answers, models often favor the most
+          frequently supported candidate even when it violates a qualifier in the question.
+          JCA decomposes questions into explicit constraints and jointly aggregates evidence
+          across candidates.
+        </p>
       </div>
 
-      <div class="publication-list">
-        <article class="publication">
-          <div class="publication-heading">
-            <h3>Deciding Among Plausible Answers: Joint Constraint Aggregation for Retrieval-Augmented QA</h3>
-            <span class="venue">EMNLP 2026</span>
-          </div>
-          <p class="authors">
-            <strong>Jennifer Hsia</strong>,
-            <a href="https://www.zacharylipton.com/">Zachary Lipton</a>,
-            <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>
-          </p>
-          <p>
-            When retrieval surfaces several plausible answers, models often favor the most
-            frequently supported candidate even when it violates a qualifier in the question.
-            JCA decomposes questions into explicit constraints and jointly aggregates evidence
-            across candidates.
-          </p>
-        </article>
-
-        <article class="publication">
-          <div class="publication-heading">
-            <h3>
-              <a href="https://proceedings.mlr.press/v267/hsia25a.html">
-                RAGGED: Towards Informed Design of Scalable and Stable RAG Systems
-              </a>
-            </h3>
-            <span class="venue">ICML 2025</span>
-          </div>
-          <p class="authors">
-            <strong>Jennifer Hsia</strong>,
-            Afreen Shaikh,
-            <a href="https://zorazrw.github.io/">Zora Zhiruo Wang</a>,
-            <a href="https://www.phontron.com/">Graham Neubig</a>
-          </p>
-          <div class="paper-links" aria-label="RAGGED resources">
-            <a href="https://proceedings.mlr.press/v267/hsia25a.html">Proceedings</a>
-            <a href="https://arxiv.org/abs/2403.09040">arXiv</a>
-            <a href="https://github.com/neulab/ragged">Code</a>
-            <a href="data/RAGGED_bib.html">BibTeX</a>
-          </div>
-          <p>
-            Across retrievers, rerankers, prompts, and retrieval depths, RAG system stability
-            is governed primarily by the reader's robustness to noisy context, not retriever
-            quality alone.
-          </p>
-        </article>
-
-        <article class="publication">
-          <div class="publication-heading">
-            <h3>
-              <a href="https://aclanthology.org/2024.findings-eacl.88/">
-                Goodhart's Law Applies to NLP's Explanation Benchmarks
-              </a>
-            </h3>
-            <span class="venue">Findings of EACL 2024</span>
-          </div>
-          <p class="authors">
-            <strong>Jennifer Hsia</strong>,
-            <a href="https://danishpruthi.com/">Danish Pruthi</a>,
-            <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>,
-            <a href="https://www.zacharylipton.com/">Zachary Lipton</a>
-          </p>
-          <div class="paper-links" aria-label="Goodhart's Law paper resources">
-            <a href="https://aclanthology.org/2024.findings-eacl.88/">Proceedings</a>
-            <a href="https://arxiv.org/abs/2308.14272">arXiv</a>
-            <a href="https://github.com/jenhsia/goodhart_nlp_explainability">Code</a>
-            <a href="data/Goodharts_bib.html">BibTeX</a>
-          </div>
-          <p>
-            We show that common faithfulness metrics can be improved by simple wrappers without
-            improving the underlying explanations, exposing a gap between benchmark scores and
-            the behavior those metrics are intended to measure.
-          </p>
-        </article>
-
-        <div class="subsection">
-          <h3 class="subsection-title">Earlier work</h3>
-          <article class="publication compact">
-            <div class="publication-heading">
-              <h3>
-                <a href="https://par.nsf.gov/servlets/purl/10299393">
-                  An Experimental Study of Balance in Matrix Factorization
-                </a>
-              </h3>
-              <span class="venue muted">CISS 2021</span>
-            </div>
-            <p class="authors">
-              <strong>Jennifer Hsia</strong>,
-              <a href="http://faculty.ee.princeton.edu/ramadge/doku.html">Peter Ramadge</a>
-            </p>
-            <div class="paper-links" aria-label="Matrix factorization paper resources">
-              <a href="https://par.nsf.gov/servlets/purl/10299393">Paper</a>
-              <a href="data/MatrixFactorization_bib.html">BibTeX</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="teaching" class="section" aria-labelledby="teaching-title">
-      <div class="section-heading">
-        <p class="section-label">CMU</p>
-        <h2 id="teaching-title">Teaching</h2>
-      </div>
-      <ul class="teaching-list">
-        <li>
-          <a href="https://www.cmu.edu/dietrich/sds/ddmlab/cotyweb/syllabus/Syllabus_10-736_88-836_88-436.pdf">
-            Human-AI Complementarity for Decision Making
+      <div class="pub">
+        <p class="pub-title">
+          <a href="https://proceedings.mlr.press/v267/hsia25a.html">
+            RAGGED: Towards Informed Design of Scalable and Stable RAG Systems
           </a>
-          <span>Teaching assistant, Spring 2025</span>
+        </p>
+        <p class="pub-authors">
+          <strong>Jennifer Hsia</strong>,
+          Afreen Shaikh,
+          <a href="https://zorazrw.github.io/">Zora Zhiruo Wang</a>,
+          <a href="https://www.phontron.com/">Graham Neubig</a>
+        </p>
+        <p class="pub-venue">
+          ICML 2025 &nbsp;/&nbsp;
+          <a href="https://proceedings.mlr.press/v267/hsia25a.html">Proceedings</a> &nbsp;/&nbsp;
+          <a href="https://arxiv.org/abs/2403.09040">arXiv</a> &nbsp;/&nbsp;
+          <a href="https://github.com/neulab/ragged">Code</a> &nbsp;/&nbsp;
+          <a href="data/RAGGED_bib.html">BibTeX</a>
+        </p>
+        <p class="pub-summary">
+          Across retrievers, rerankers, prompts, and retrieval depths, RAG system stability
+          is governed primarily by the reader's robustness to noisy context, not retriever
+          quality alone.
+        </p>
+      </div>
+
+      <div class="pub">
+        <p class="pub-title">
+          <a href="https://aclanthology.org/2024.findings-eacl.88/">
+            Goodhart's Law Applies to NLP's Explanation Benchmarks
+          </a>
+        </p>
+        <p class="pub-authors">
+          <strong>Jennifer Hsia</strong>,
+          <a href="https://danishpruthi.com/">Danish Pruthi</a>,
+          <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>,
+          <a href="https://www.zacharylipton.com/">Zachary Lipton</a>
+        </p>
+        <p class="pub-venue">
+          Findings of EACL 2024 &nbsp;/&nbsp;
+          <a href="https://aclanthology.org/2024.findings-eacl.88/">Proceedings</a> &nbsp;/&nbsp;
+          <a href="https://arxiv.org/abs/2308.14272">arXiv</a> &nbsp;/&nbsp;
+          <a href="https://github.com/jenhsia/goodhart_nlp_explainability">Code</a> &nbsp;/&nbsp;
+          <a href="data/Goodharts_bib.html">BibTeX</a>
+        </p>
+        <p class="pub-summary">
+          We show that common faithfulness metrics can be improved by simple wrappers without
+          improving the underlying explanations, exposing a gap between benchmark scores and
+          the behavior those metrics are intended to measure.
+        </p>
+      </div>
+
+      <div class="pub">
+        <p class="pub-title">
+          <a href="https://par.nsf.gov/servlets/purl/10299393">
+            An Experimental Study of Balance in Matrix Factorization
+          </a>
+        </p>
+        <p class="pub-authors">
+          <strong>Jennifer Hsia</strong>,
+          <a href="http://faculty.ee.princeton.edu/ramadge/doku.html">Peter Ramadge</a>
+        </p>
+        <p class="pub-venue">
+          CISS 2021 &nbsp;/&nbsp;
+          <a href="https://par.nsf.gov/servlets/purl/10299393">Paper</a> &nbsp;/&nbsp;
+          <a href="data/MatrixFactorization_bib.html">BibTeX</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul>
+        <li>
+          Teaching assistant,
+          <a href="https://www.cmu.edu/dietrich/sds/ddmlab/cotyweb/syllabus/Syllabus_10-736_88-836_88-436.pdf">Human-AI Complementarity for Decision Making</a>,
+          CMU, Spring 2025
         </li>
         <li>
-          <a href="https://andrejristeski.github.io/10708-S23/">
-            Probabilistic Graphical Models
-          </a>
-          <span>Teaching assistant, Spring 2023</span>
+          Teaching assistant,
+          <a href="https://andrejristeski.github.io/10708-S23/">Probabilistic Graphical Models</a>,
+          CMU, Spring 2023
         </li>
       </ul>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2026 Jennifer Hsia</p>
-  </footer>
+    <footer>
+      <p>Last updated September 2026.</p>
+    </footer>
+  </main>
 </body>
 </html>
