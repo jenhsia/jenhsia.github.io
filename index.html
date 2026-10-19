@@ -7,7 +7,7 @@
   <meta name="author" content="Jennifer Hsia">
   <meta
     name="description"
-    content="Jennifer Hsia is a Machine Learning PhD candidate at Carnegie Mellon University researching language model behavior, evaluation, and grounded systems."
+    content="Jennifer Hsia is a Machine Learning PhD candidate at Carnegie Mellon University working on LLM reliability: evaluations that expose model failures and methods that reduce them."
   >
   <link rel="canonical" href="https://jenhsia.github.io/">
   <link rel="icon" type="image/jpeg" href="images/avatar.jpg">
@@ -15,14 +15,14 @@
   <meta property="og:title" content="Jennifer Hsia">
   <meta
     property="og:description"
-    content="Machine Learning PhD candidate at Carnegie Mellon University researching language model behavior, evaluation, and grounded systems."
+    content="Machine Learning PhD candidate at Carnegie Mellon University working on LLM reliability: evaluations that expose model failures and methods that reduce them."
   >
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jenhsia.github.io/">
   <meta property="og:image" content="https://jenhsia.github.io/images/avatar.jpg">
   <meta name="twitter:card" content="summary">
 
-  <link rel="stylesheet" href="stylesheet.css?v=3">
+  <link rel="stylesheet" href="stylesheet.css?v=4">
 </head>
 
 <body>
@@ -40,19 +40,25 @@
           <a href="http://faculty.ee.princeton.edu/ramadge/doku.html">Peter Ramadge</a>.
         </p>
         <p>
-          I study language model behavior and evaluation, with a focus on grounded systems.
-          My research asks why models fail even when the information they need is available,
-          develops targeted evaluations to identify those failures, and explores interventions
-          that help models use evidence more reliably. My recent work examines how grounded
-          assistants should reason about the assumptions embedded in a user's question
-          before answering it.
+          I study the reliability of large language models: when models reach conclusions
+          their inputs don't justify, and how to catch and fix it. My work examines how models
+          handle users' claims about themselves, how they choose among plausible answers when
+          retrieved evidence favors the wrong one, and whether standard evaluations actually
+          measure what they claim to. I design controlled evaluations that expose these
+          failures and develop methods that reduce them.
         </p>
         <p>
-          I am currently on the market for industry roles focused on model behavior,
-          evaluation, and reliable grounded systems.
+          Previously, I was a Research Scientist Intern at Meta (Ads Ranking), working on
+          compact representations of long user-behavior histories.
+        </p>
+        <p>
+          I am on the job market for industry research roles in LLM evaluation, model
+          behavior, and reliability, graduating in May 2027.
         </p>
         <p class="links">
           <a href="mailto:jennifer.hsia2@gmail.com">Email</a> &nbsp;/&nbsp;
+          <a href="Jennifer_Hsia_CV.pdf">CV</a> &nbsp;/&nbsp;
+          <a href="https://scholar.google.com/citations?user=4i-T-5UAAAAJ&amp;hl=en">Google Scholar</a> &nbsp;/&nbsp;
           <a href="https://github.com/jenhsia">GitHub</a> &nbsp;/&nbsp;
           <a href="https://www.linkedin.com/in/jennifer-h-b90144131/">LinkedIn</a>
         </p>
@@ -66,19 +72,39 @@
 
       <div class="pub">
         <p class="pub-title">
-          Joint Constraint Aggregation for Qualifier-Sensitive Retrieval-Augmented Question Answering
+          When the Rule Is Clear but the Case Isn't: How User Claims Shape LLM Advice
         </p>
         <p class="pub-authors">
           <strong>Jennifer Hsia</strong>,
           <a href="https://www.zacharylipton.com/">Zachary Lipton</a>,
           <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>
         </p>
-        <p class="pub-venue">EMNLP 2026</p>
+        <p class="pub-venue">In submission</p>
         <p class="pub-summary">
-          When retrieval surfaces several plausible answers, models often favor the most
-          frequently supported candidate even when it violates a qualifier in the question.
-          JCA decomposes questions into explicit constraints and jointly aggregates evidence
-          across candidates.
+          Models largely reject user claims that the stated facts contradict, but often accept
+          the same claims when a key fact is missing, a case that sycophancy tests built on
+          contradicted claims can miss.
+        </p>
+      </div>
+
+      <div class="pub">
+        <p class="pub-title">
+          Joint Constraint Aggregation for Qualifier-Sensitive Retrieval-Augmented QA
+        </p>
+        <p class="pub-authors">
+          <strong>Jennifer Hsia</strong>,
+          <a href="https://www.zacharylipton.com/">Zachary Lipton</a>,
+          <a href="https://www.cs.cmu.edu/~aarti/">Aarti Singh</a>
+        </p>
+        <p class="pub-venue">
+          EMNLP 2026 &nbsp;/&nbsp;
+          <a href="https://github.com/jenhsia/joint_constraint_aggregation">Code</a>
+        </p>
+        <p class="pub-summary">
+          LLMs can be pulled toward plausible answers that miss a key qualifier in the question
+          when retrieval favors them. JCA checks every candidate against the question's
+          requirements and compares them side by side, improving both accuracy and robustness
+          to misleading retrieval.
         </p>
       </div>
 
@@ -89,10 +115,11 @@
           </a>
         </p>
         <p class="pub-authors">
-          <strong>Jennifer Hsia</strong>,
-          Afreen Shaikh,
+          <strong>Jennifer Hsia*</strong>,
+          Afreen Shaikh*,
           <a href="https://zorazrw.github.io/">Zora Zhiruo Wang</a>,
           <a href="https://www.phontron.com/">Graham Neubig</a>
+          &nbsp;<span class="pub-note">(*equal contribution)</span>
         </p>
         <p class="pub-venue">
           ICML 2025 &nbsp;/&nbsp;
@@ -102,9 +129,9 @@
           <a href="data/RAGGED_bib.html">BibTeX</a>
         </p>
         <p class="pub-summary">
-          Across retrievers, rerankers, prompts, and retrieval depths, RAG system stability
-          is governed primarily by the reader's robustness to noisy context, not retriever
-          quality alone.
+          Evaluating RAG at a single retrieval depth hides brittleness: as more passages are
+          added, some models degrade while others plateau, a pattern that tracks each model's
+          sensitivity to distracting passages more than the choice of retriever.
         </p>
       </div>
 
@@ -121,7 +148,7 @@
           <a href="https://www.zacharylipton.com/">Zachary Lipton</a>
         </p>
         <p class="pub-venue">
-          EACL 2024 &nbsp;/&nbsp;
+          Findings of EACL 2024 &nbsp;/&nbsp;
           <a href="https://aclanthology.org/2024.findings-eacl.88/">Proceedings</a> &nbsp;/&nbsp;
           <a href="https://arxiv.org/abs/2308.14272">arXiv</a> &nbsp;/&nbsp;
           <a href="https://github.com/jenhsia/goodhart_nlp_explainability">Code</a> &nbsp;/&nbsp;
@@ -163,13 +190,21 @@
         <li>
           Teaching assistant,
           <a href="https://andrejristeski.github.io/10708-S23/">Probabilistic Graphical Models</a>,
-          CMU, Spring 2023
+          CMU, Spring 2023 (Machine Learning Department TA Award)
         </li>
       </ul>
     </section>
 
+    <section id="service">
+      <h2>Service</h2>
+      <ul>
+        <li>Reviewer: ACL, EMNLP, ICML</li>
+        <li>Organizer, NeurIPS 2022 Workshop on Human Evaluation of Generative Models</li>
+      </ul>
+    </section>
+
     <footer>
-      <p>Last updated September 2026.</p>
+      <p>Last updated October 2026.</p>
     </footer>
   </main>
 </body>

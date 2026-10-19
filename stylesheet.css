@@ -121,3 +121,8 @@ footer {
     font-size: 26px;
   }
 }
+
+.pub-note {
+  color: #888888;
+  font-size: 13px;
+}
